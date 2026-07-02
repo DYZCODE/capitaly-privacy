@@ -18,24 +18,25 @@ ul{padding-left:20px;margin-bottom:16px}
 <body>
 <div class="logo">Capitaly</div>
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: July 1, 2026</p>
+<p class="date">Last updated: July 2, 2026</p>
 
 <h2>1. Introduction</h2>
 <p>Capitaly ("we", "our", "the app") is a personal and business finance management application. We are committed to protecting your privacy. This policy explains how we handle your information across iPhone, iPad, and Mac.</p>
 
 <h2>2. Data We Collect</h2>
-<p>Capitaly stores financial data <strong>locally on your device</strong>. We do not operate our own backend to store your financial database.</p>
+<p>Capitaly stores financial data locally on your device by default. If you activate cloud sync, Capitaly also stores a private copy in your Firebase account so the same data can sync between your devices.</p>
 <ul>
-<li><strong>Financial transactions</strong> (income, expenses, transfers) - stored locally on your device</li>
-<li><strong>Client and business information</strong> (names, contact details, collections, quotes) - stored locally on your device</li>
-<li><strong>Wallets, goals, budgets, debts, services, cards</strong> - stored locally on your device</li>
-<li><strong>Authentication profile data</strong> (name, email, sign-in method) - stored locally on your device</li>
+<li><strong>Financial transactions</strong> (income, expenses, transfers) - stored locally and optionally synced to your private cloud workspace</li>
+<li><strong>Client and business information</strong> (names, contact details, collections, quotes) - stored locally and optionally synced</li>
+<li><strong>Wallets, goals, budgets, debts, services, cards</strong> - stored locally and optionally synced</li>
+<li><strong>Authentication profile data</strong> (name, email, sign-in method) - used to authenticate your account and, if sync is enabled, connect your private cloud data</li>
 </ul>
 
 <h2>3. Third-Party Services</h2>
 <p>Capitaly may use the following third-party services:</p>
 <ul>
-<li><strong>Google Sign-In</strong> - Optional authentication. Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+<li><strong>Firebase Authentication and Firestore</strong> - Optional cloud sync for email or Google accounts. Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+<li><strong>Google Sign-In</strong> - Optional authentication provider. Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
 <li><strong>Anthropic Claude API</strong> - Optional AI features. Only used after you explicitly grant permission in the app. Depending on the feature, the text you enter, the selected receipt image, and the relevant financial context needed to answer your request may be sent to Anthropic. You must provide your own API key. Subject to <a href="https://www.anthropic.com/privacy">Anthropic's Privacy Policy</a>.</li>
 <li><strong>Google Sheets API</strong> - Optional export feature. Only accesses sheets you explicitly authorize.</li>
 <li><strong>StoreKit / App Store</strong> - Handles subscriptions, trials, purchases, and renewals.</li>
@@ -46,19 +47,19 @@ ul{padding-left:20px;margin-bottom:16px}
 <li>We do not collect analytics or usage data</li>
 <li>We do not track your location</li>
 <li>We do not sell or share your data with advertisers</li>
-<li>We do not have access to your financial data (it's stored locally on your device)</li>
+<li>We do not use your financial data for advertising or profiling</li>
 <li>We do not store your API keys on our servers</li>
 </ul>
 
 <h2>5. Data Storage & Security</h2>
-<p>Your data is stored using Apple's SwiftData framework. If Apple device backups are enabled on your device, your system may include Capitaly data in your personal backup. Biometric authentication (Face ID / Touch ID) is available for additional security.</p>
+<p>Your data is stored using Apple's SwiftData framework on-device. When cloud sync is enabled, Capitaly also writes a synchronized copy to your private Firebase / Firestore account over an encrypted connection. If Apple device backups are enabled on your device, your system may also include Capitaly data in your personal backup. Biometric authentication (Face ID / Touch ID) is available for additional security.</p>
 
 <h2>6. Your Rights</h2>
 <p>You have full control over your data:</p>
 <ul>
 <li><strong>Access</strong> - All your data is visible within the app</li>
 <li><strong>Export</strong> - You can export your data as CSV at any time</li>
-<li><strong>Delete</strong> - You can delete your local account and app data from inside the app.</li>
+<li><strong>Delete</strong> - You can delete your local account, local app data, and synced cloud data from inside the app.</li>
 <li><strong>Portability</strong> - CSV export allows you to move your data anywhere</li>
 <li><strong>Consent</strong> - You can revoke permission for Anthropic-powered AI features at any time in the app settings.</li>
 </ul>
